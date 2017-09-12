@@ -4,7 +4,12 @@
    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
   <head>
     <meta content="" />
     <title>
@@ -72,29 +77,29 @@
                 <div class="control-group">
                   <label class="control-label" for="nome_exercicio">Nome</label>
                   <div class="controls">
-                    <input id="nome_exercicio" name="nome_exercicio"
-                    class="input-xlarge" type="text" />
+                     <h:inputText id="nome_exercicio" name="nome_exercicio" class="input-xlarge"  />
                   </div>
                 </div>
                 <div class="control-group">
                   <label class="control-label" for="tipo_exercicio">Tipo</label>
                   <div class="controls">
-                    <input id="tipo_exercicio" name="tipo_exercicio"
-                    class="input-xlarge" type="text" />
+                    
+                    <h:inputText id="tipo_exercicio" name="tipo_exercicio" class="input-xlarge" />
+                    
                   </div>
                 </div>
                 <div class="control-group">
                   <label class="control-label" for="repeticoes_exercicio">RepetiÃ§Ãµes</label>
-                  <div class="controls">
-                    <input id="repeticoes_exercicio"
-                    name="repeticoes_exercicio" class="input-small" type="text" />
+                  <div class="controls">                                      
+                    <h:inputText  id="repeticoes_exercicio"  name="repeticoes_exercicio" class="input-small" />
                   </div>
                 </div>
                 <div class="control-group">
                   <label class="control-label" for="series_exercicio">SÃ©ries</label>
                   <div class="controls">
-                    <input id="series_exercicio" name="series_exercicio"
-                    class="input-small" type="text" />
+                                       
+                    <h:inputText id="series_exercicio" name="series_exercicio" class="input-small" />
+                    
                   </div>
                 </div>
                 <!--  Text input -->
@@ -102,8 +107,7 @@
                 <div class="control-group">
                   <label class="control-label" for="cadastrar_exercicio"></label>
                   <div class="controls">
-                    <br /> <br /> <button id="cadastrar_exercicio"
-                    name="cadastrar_exercicio" class="btn btn-success">Cadastrar</button>
+                    <br /> <br /> <button id="cadastrar_exercicio"  name="cadastrar_exercicio" class="btn btn-success">Cadastrar</button>
                   </div>
                 </div>
                 <!--  Text input -->
